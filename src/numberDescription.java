@@ -9,13 +9,13 @@ public class numberDescription {
         double type = scanner.nextInt();
         if (type < 0)
             System.out.println("Число отрицательное");
-        else if (type > 0)
+        if (type > 0)
             System.out.println("Число положительное");
-        else if (type < 10 && type > 0)
+        if (type < 10 && type > 0)
             System.out.println("Число однозначное");
-        else if (type < 100 && type > 9)
+        if (type < 100 && type >= 9)
             System.out.println("Число двузначное");
-        else if (type < 1000 && type > 99)
+        if (type < 1000 && type >= 99)
             System.out.println("Число трехзначное");
         if (type % 2 == 0)
             System.out.println("Число четное");
