@@ -17,8 +17,11 @@ public class numberDescription {
             System.out.println("Число двузначное");
         else if (type < 1000 && type > 99)
             System.out.println("Число трехзначное");
-       // else if (type % 2)==0;
-       // System.out.println("Число четное");
+        if (type % 2 == 0)
+            System.out.println("Число четное");
+        else if (type % 2 != 0)
+        System.out.println("Число нечетное");
 
     }
+
 }
